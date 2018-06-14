@@ -33,26 +33,27 @@
             this.textbox_user = new System.Windows.Forms.TextBox();
             this.textbox_password = new System.Windows.Forms.TextBox();
             this.button_login = new System.Windows.Forms.Button();
-            this.button_clear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lable_name
             // 
             this.lable_name.AutoSize = true;
-            this.lable_name.Location = new System.Drawing.Point(59, 41);
+            this.lable_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lable_name.Location = new System.Drawing.Point(56, 38);
             this.lable_name.Name = "lable_name";
-            this.lable_name.Size = new System.Drawing.Size(71, 13);
+            this.lable_name.Size = new System.Drawing.Size(73, 17);
             this.lable_name.TabIndex = 0;
-            this.lable_name.Text = "USER NAME";
+            this.lable_name.Text = "Username";
             // 
             // label_password
             // 
             this.label_password.AutoSize = true;
-            this.label_password.Location = new System.Drawing.Point(60, 84);
+            this.label_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label_password.Location = new System.Drawing.Point(56, 78);
             this.label_password.Name = "label_password";
-            this.label_password.Size = new System.Drawing.Size(70, 13);
+            this.label_password.Size = new System.Drawing.Size(69, 17);
             this.label_password.TabIndex = 1;
-            this.label_password.Text = "PASSWORD";
+            this.label_password.Text = "Password";
             // 
             // textbox_user
             // 
@@ -70,31 +71,20 @@
             // 
             // button_login
             // 
-            this.button_login.Location = new System.Drawing.Point(229, 126);
+            this.button_login.Location = new System.Drawing.Point(154, 115);
             this.button_login.Name = "button_login";
-            this.button_login.Size = new System.Drawing.Size(75, 23);
+            this.button_login.Size = new System.Drawing.Size(150, 30);
             this.button_login.TabIndex = 4;
             this.button_login.Text = "SING IN";
             this.button_login.UseVisualStyleBackColor = true;
             this.button_login.Click += new System.EventHandler(this.button_login_Click);
-            // 
-            // button_clear
-            // 
-            this.button_clear.Location = new System.Drawing.Point(148, 126);
-            this.button_clear.Name = "button_clear";
-            this.button_clear.Size = new System.Drawing.Size(75, 23);
-            this.button_clear.TabIndex = 5;
-            this.button_clear.Text = "CLEAR";
-            this.button_clear.UseVisualStyleBackColor = true;
-            this.button_clear.Click += new System.EventHandler(this.button_clear_Click);
             // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(372, 188);
-            this.Controls.Add(this.button_clear);
+            this.ClientSize = new System.Drawing.Size(372, 182);
             this.Controls.Add(this.button_login);
             this.Controls.Add(this.textbox_password);
             this.Controls.Add(this.textbox_user);
@@ -104,6 +94,7 @@
             this.MinimizeBox = false;
             this.Name = "FormLogin";
             this.Text = "Quick Start Login";
+            this.Load += new System.EventHandler(this.FormLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,7 +107,6 @@
         private System.Windows.Forms.TextBox textbox_user;
         private System.Windows.Forms.TextBox textbox_password;
         private System.Windows.Forms.Button button_login;
-        private System.Windows.Forms.Button button_clear;
     }
 }
 
