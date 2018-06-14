@@ -37,7 +37,7 @@ namespace QuickStart
                 var items = db.Users.SingleOrDefault(users => users.Id == txtuser && users.Password == txtpassword);
                 if (items != null)
                 {
-                    MessageBox.Show("Success");
+                    MessageBox.Show("Success!");
                 }
                 else
                 {
